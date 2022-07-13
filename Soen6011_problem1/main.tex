@@ -1,0 +1,98 @@
+\documentclass[letterpaper, 11pt]{report}
+\usepackage{titlesec}
+\usepackage{fullpage} % changes the margin
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} %package to manage images
+\usepackage[linkcolor=red]{hyperref}
+\usepackage{paralist}
+\usepackage{subcaption}
+\graphicspath{ {./images/} }
+
+\begin{document}
+\begin{titlepage}
+\vspace*{0.7in}
+\begin{center}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{univ_logo}
+\end{center}
+\end{figure}
+\vspace*{0.3in}
+\begin{Large}
+\textbf{SOEN 6011 : SOFTWARE ENGINEERING PROCESSES} \\
+\end{Large}
+\vspace*{0.1in}
+\begin{Large}
+\textbf{SUMMER 2022} \\
+\end{Large}
+\vspace*{0.9in}
+\begin{Large}
+\textbf{PROBLEM - 1} \\
+Function Description \\
+\end{Large}
+\vspace*{0.625in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Author \\
+\vspace*{0.1in}
+Zeyu Huang\\
+
+\vspace*{0.3in}
+\date{\normalsize\today} 
+\end{large}
+\end{center}
+\begin{center}
+https://www.overleaf.com/project/62cdb1d5b13422add2cceb12\end{center}
+\end{titlepage}
+\tableofcontents
+\newpage
+\addcontentsline{toc}{section}{a) Description of Function}
+\section*{Description of Function}
+\section*{\centering{F2: $tan(x)$}}
+
+ \subsection*{ Tangent Function, $tan(x)$ } 
+ 
+ \normalsize{ \cite{test1} $tan(x)$  is a periodic function which is very important in trigonometry. The simplest way to understand the tangent function is to use the unit circle. For a given angle measure $\theta$ draw a unit circle on the coordinate plane and draw the angle centered at the origin, with one side as the positive  x -axis. The  x -coordinate of the point where the other side of the angle intersects the circle is $cos(θ)$ and the  y -coordinate is $sin(θ)$. So, the tangent function is define as below: \[tan(x) = \frac{sin(x)}{cos(x)}\]\\}
+The below graph shows values corresponding to different angles.
+ \begin{center}
+\includegraphics[width= 6cm]{images/tan3.png}
+\end{center}
+ \\
+ \normalsize{ \cite{test1}\cite{varsitytutors}The tangent function is undefined when $x$ $=$ $\pi$ / 2 $+$ $n \pi$ (where, $n$ is integer) for which, $cos(x) = 0$. However, Tangent function does not have an amplitude. In addition, The graph intercept $x$-axis at $n\pi$ (where $n$ is integer) and in $y$-axis at $(0,0)$ point. The period of tangent function is $\pi$.
+ }
+ \\
+ \subsection*{Range}\cite{test1}\cite{varsitytutors}
+ \normalsize{ The range of $tan(x)$ is all real number $\mathbb{R}$, $(- \infty, + \infty)$. }
+ 
+ \subsection*{Domain and Co-domain}\cite{test1}\cite{varsitytutors}
+ \normalsize{The domain of tangent function is $x \in$ $\mathbb{R}$, $x$ $\neq$ $\pi$ / 2 $+$ $n \pi$ where, $n$ is an integer. The co-domain of $tan(x)$ is \((-\infty, +\infty\)).}
+ 
+ 
+ \begin{thebibliography}{}
+ 
+\bibitem{test1}
+Varsity Tutors.
+\\https://www.varsitytutors.com/hotmath/hotmath$\_$help/topics/tangent-function
+
+\bibitem{varsitytutors} 
+varsitytutors.graphing tangent function. 
+\\https://www.varsitytutors.com/hotmath/hotmath$\_$help/topics/graphing-tangent-function
+
+\end{thebibliography}
+ 
+ 
+ 
+ 
+\pagebreak
+
+
+\newpage
+\addcontentsline{toc}{section}{b) Context of Use Model}
+\section*{Context of Use Model}
+\normalsize{Users can use the calculator to calculate the result of $sin()$, $cos()$ and $\frac{sin()}{cos()}$ which is $tan()$ of a degree. This degree shall be an integer or decimal, so the digits \textit{0-9} and the decimal point must be available by the user. The user can select the appropriate function they want to use, and they shall be able to press a button to have the answer computed. The calculator should return the result or an error message that indicates why it was unable to do so.}
+\begin{center}
+\includegraphics[width=15cm]{context_diagram}
+\end{center}
+\end{document}
