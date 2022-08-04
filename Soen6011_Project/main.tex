@@ -468,6 +468,202 @@ For code quality check part, I use Checkstyle to check the code quality.\cite{ch
 I use Checkstyle tool to fix some major warnings and errors, but left some unknown and unimportant warnings still not fixed.
 \pagebreak
 \newpage
+\addcontentsline{toc}{section}{5) Problem 5}
+\section*{5)Problem 5}\\
+\textbf{Test Cases:}\\
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-01\\
+\hline
+Trace to requirement & FR1\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(0)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & 0\\
+ \hline
+  Steps
+ & \makecell{1.Enter 0\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return 0 as output} \\
+ \hline
+\end{tabular} \\ \\
+
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-02\\
+\hline
+Trace to requirement & FR2\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(195)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & 0.2679\\
+ \hline
+  Steps
+ & \makecell{1.Enter 195\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return 0.2679 as output} \\
+ \hline
+\end{tabular} \\ \\
+
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-03\\
+\hline
+Trace to requirement & FR3\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(-10)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & -0.1763\\
+ \hline
+  Steps
+ & \makecell{1.Enter -10\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return -0.1763 as output} \\
+ \hline
+\end{tabular} \\ \\
+
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-04\\
+\hline
+Trace to requirement & FR4\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(90)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & invalid\\
+ \hline
+  Steps
+ & \makecell{1.Enter 90\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return "invalid" as output} \\
+ \hline
+\end{tabular} \\ \\
+
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-05\\
+\hline
+Trace to requirement & FR1\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(180)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & -0\\
+ \hline
+  Steps
+ & \makecell{1.Enter 180\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return -0 as output} \\
+ \hline
+\end{tabular} \\ \\
+
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-06\\
+\hline
+Trace to requirement & FR2\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(45)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & 1\\
+ \hline
+  Steps
+ & \makecell{1.Enter 45\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return 1 as output} \\
+ \hline
+\end{tabular} \\ \\
+
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-07\\
+\hline
+Trace to requirement & FR2\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(85)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & 11.4300\\
+ \hline
+  Steps
+ & \makecell{1.Enter 85\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return 11.430 as output} \\
+ \hline
+\end{tabular} \\ \\
+
+\newline
+\bigskip
+\begin{tabular}{ |c|c|}
+\hline
+id & TC-08\\
+\hline
+Trace to requirement & FR2\\
+\hline
+Description
+ & \makecell{To calculate the value of Tan(110)} \\
+\hline
+Precondition
+ & The calculator is already on.\\
+ \hline
+Expected result
+ & -2.7475\\
+ \hline
+  Steps
+ & \makecell{1.Enter 110\\ 2. Press "Tan" button \\ 
+ 3. Press "=" button \\ 4. Return -2.7475 as output} \\
+ \hline
+\end{tabular} \\
+\newline
+\bigskip
+For the test part, I use Junit testing framework to implement it. Below are the examples coverage and tests result.\\
+\newline
+\includegraphics[width=15cm]{images/Cover.png}\\
+\newline
+\includegraphics[width=15cm]{images/test.png}\\
+\pagebreak
+\newpage
+
 
 
 \begin{thebibliography}{}
@@ -490,5 +686,8 @@ Pseudocode for Polynomial approximation\\https://mathonweb.com/help\_ebook/html/
 \bibitem{check} 
 Checkstyle\\
 https://checkstyle.sourceforge.io/
+\bibitem{Junit} 
+Juit\\
+https://en.wikipedia.org/wiki/JUnit
 \end{thebibliography}
 \end{document}
