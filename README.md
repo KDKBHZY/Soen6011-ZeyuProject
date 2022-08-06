@@ -1,7 +1,7 @@
 # Soen6011-ZeyuProject
 This is a Tan calculator to calculate the tangent value of given degree.
 
-!!!!!!I add jar file in the git repository, sorry about that.
+!!!!!!I add jar file in the git repository in SOEN6011-CC-1/40190030.zip, sorry about that.
 Or you can open in any IDE and run Main Class.
 
 Steps to use:
